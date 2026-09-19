@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | My First Website</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="1.css">
+</head>
+<body data-theme="dark">
+
+<div class="ambient-glow"></div>
+
+<!-- Navigation -->
+<nav>
+    <a href="#" class="logo">
+        <i class="fa-solid fa-code" style="color: var(--accent-primary);"></i> My<span>FirstSite</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#interactive">Experience</a></li>
+    </ul>
+    <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#about" class="btn-primary">Say Hello</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">
+            <i class="fa-solid fa-rocket"></i> Launching Online
+        </div>
+        <h1>Hello World! This is <span>My First Website.</span></h1>
+        <p>Welcome to my digital corner on the internet. I built this from scratch using HTML, CSS, and JavaScript to learn how the web works and showcase what's possible.</p>
+        <div class="hero-buttons">
+            <a href="#about" class="btn-primary">Explore Page</a>
+            <button class="btn-secondary" id="confettiBtn"><i class="fa-solid fa-wand-magic-sparkles"></i> Celebrate Launch</button>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="code-window">
+            <div class="window-header">
+                <div class="dot dot-red"></div>
+                <div class="dot dot-yellow"></div>
+                <div class="dot dot-green"></div>
+                <span class="window-title">main.js</span>
+            </div>
+            <div class="window-body">
+                <p><span class="code-keyword">const</span> <span class="code-var">milestone</span> = {</p>
+                <p>&nbsp;&nbsp;project: <span class="code-string">"First Website"</span>,</p>
+                <p>&nbsp;&nbsp;status: <span class="code-string">"Live & Deployed"</span>,</p>
+                <p>&nbsp;&nbsp;excitementLevel: <span class="code-string">"100%"</span>,</p>
+                <p>&nbsp;&nbsp;developer: <span class="code-string">"In Training"</span></p>
+                <p>};</p>
+                <p><br></p>
+                <p><span class="code-func">console</span>.<span class="code-keyword">log</span>(<span class="code-string">"Thanks for visiting!"</span>);</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="stat-card">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Core Languages Mastered (HTML, CSS, JS)</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number" id="visitCounter">1</div>
+        <div class="stat-label">Total Visits Tracked Live</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Custom Code Written From Scratch</div>
+    </div>
+</section>
+
+<!-- About Section -->
+<div id="about" class="section-header">
+    <h2>Why I Built This Site</h2>
+    <p>Every developer starts somewhere. This project marks the beginning of my journey into web development and digital design.</p>
+</div>
+
+<div class="benefits-container">
+    <div class="benefit-card">
+        <div class="benefit-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h3>Learning by Doing</h3>
+        <p>Reading textbooks only gets you so far. Building an actual live page teaches you layout debugging, responsiveness, and file structures instantly.</p>
+    </div>
+
+    <div class="benefit-card">
+        <div class="benefit-icon">
+            <i class="fa-solid fa-paintbrush"></i>
+        </div>
+        <h3>Modern UI &amp; Design</h3>
+        <p>Experimenting with CSS variables, backdrop filters, gradients, and dark/light modes to ensure it looks clean on any device.</p>
+    </div>
+
+    <div class="benefit-card">
+        <div class="benefit-icon">
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h3>Interactive JavaScript</h3>
+        <p>Adding dynamic elements like theme toggles, live statistics counters, and interactive buttons to bring the static page to life.</p>
+    </div>
+</div>
+
+<!-- Interactive Widget Section -->
+<div id="interactive" class="calculator-section">
+    <div class="section-header" style="margin-bottom: 40px;">
+        <h2>Interactive Sandbox</h2>
+        <p>Test out live elements built directly into the site's JavaScript logic.</p>
+    </div>
+    <div class="calculator-box">
+        <div style="text-align: center; display: flex; flex-direction: column; gap: 20px; align-items: center;">
+            <h3 style="font-size: 1.5rem;">Click Counter Challenge</h3>
+            <p style="color: var(--text-muted); max-width: 450px;">See how many clicks you can rack up on the interactive button below!</p>
+            <div style="font-size: 3.5rem; font-weight: 800; color: var(--accent-secondary);" id="clickCount">0</div>
+            <button class="btn-primary" id="clickMeBtn" style="padding: 12px 28px; font-size: 1.05rem;">Click Me!</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <a href="#" class="logo" style="justify-content: center;">
+        <i class="fa-solid fa-code" style="color: var(--accent-primary);"></i> My<span>FirstSite</span>
+    </a>
+    <p>&copy; 2026 | Proudly built as my first live website.</p>
+</footer>
+
+<!-- JavaScript File -->
+<script src="index.js"></script>
+</body>
+</html>
